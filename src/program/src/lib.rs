@@ -6,19 +6,14 @@ use solana_program::{
     msg,
 };
 
-// Declare the entrypoint of the program
 entrypoint!(process_instruction);
 
-// This function is executed when your Solana program is invoked
 pub fn process_instruction(
-    program_id: &Pubkey,          // Public key of the program
-    accounts: &[AccountInfo],     // The accounts to interact with
-    instruction_data: &[u8],      // Instruction data
+    program_id: &Pubkey,        
+    accounts: &[AccountInfo],    
+    instruction_data: &[u8],      
 ) -> ProgramResult {
-    // Log a message to the Solana runtime
-    msg!("Hello, Solana!");
-
-    // Implement your logic here
     
+    msg!("Hello, Solana!");
     Ok(())
 }
