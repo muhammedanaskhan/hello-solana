@@ -1,0 +1,20 @@
+# Ignore compiled Rust files
+/target/
+
+# Ignore test-ledger RocksDB files
+src/program/test-ledger/*.sst
+
+# If test-ledger contains other temporary files, you can ignore the whole folder
+src/program/test-ledger/
+
+# Ignore IDE settings or editor-related files (optional)
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Ignore node_modules if using Node.js (since you have package.json)
+/node_modules/
+
+# Optionally ignore Cargo.lock for libraries (do not ignore if this is a binary project)
+/Cargo.lock

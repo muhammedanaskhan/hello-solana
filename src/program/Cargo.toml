@@ -1,0 +1,11 @@
+[package]
+name = "program"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.16.0"   # Add the latest compatible version of Solana's program library
+borsh = "0.9" 
+
+[lib]
+crate-type = ["cdylib","lib"]
